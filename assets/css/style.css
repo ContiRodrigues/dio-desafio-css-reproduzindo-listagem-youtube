@@ -1,0 +1,161 @@
+@import url(./reset.css);
+@import url(./global.css);
+
+body {
+    display: grid;
+    grid-template: 
+        "header header header header header" 56px
+        "sidebar main main main main" 262px
+        "sidebar main main main main" 262px
+        "sidebar main main main main" 262px
+        / 1fr 1fr 1fr 1fr 1fr;
+}
+
+/*Header*/
+.header-content {
+    width: 100%;
+    height: 56px;
+    display: inline-flex;
+    grid-area: header;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.menu-left {
+    display: inline-flex;
+    padding-left: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-center {
+    display: inline-flex;
+    align-items: center;
+}
+
+.menu-right {
+    display: inline-flex;
+    padding-right: 20px;
+    align-items: center;
+    gap: 25px;
+}
+
+#vector {
+    width: 24px;
+}
+
+#logo {
+    width: 90px;
+    height: 20px;
+}
+
+#search {
+    width: 348px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#lupa {
+    width: 57px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#lupa img {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#camera {
+    width: 24px;
+}
+
+#bell {
+    width: 24px;
+}
+
+#avatar img {
+    width: 34px;
+    border-radius: 50%;
+}
+
+/*Sidebar*/
+.sidebar-content {
+    width: 218px;
+    grid-area: sidebar;
+    align-items: center;
+}
+
+.sidebar {
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sidebar img {
+    width: 24px;
+}
+
+/*Main*/
+.main-content {
+    width: 1222px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 262px);
+}    
+
+.main-video {
+    width: 282px;
+    height: 262px;
+    padding: 30px;
+}
+
+.main-iframe iframe {
+    border-radius: 10px;
+}
+
+.main-text {
+    width: 249px;
+    height: 74px;
+    padding-top: 15px;
+    display: flex;
+}
+
+.main-avatar img {
+    width: 42px;
+    height: 42px;
+}
+
+.main-p {
+    width: 197px;
+    height: 74px;
+}
+
+.main-p #main-title {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 8px;
+    padding-bottom: 10px;
+}
+
+.main-p #main-name {
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+
+.main-p #main-visualizations {
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 8px;
+}
